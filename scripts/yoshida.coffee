@@ -107,7 +107,7 @@ module.exports = (robot) ->
                             "はい。"
                            ]
 
-  robot.hear /ｗｗ/i, (msg) ->
+  robot.hear /(ｗｗ|草)/i, (msg) ->
     if (lot 70)
       msg.send random_word ["(爆笑)",
                             "あはは(笑)",
