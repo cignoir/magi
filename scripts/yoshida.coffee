@@ -56,7 +56,7 @@ module.exports = (robot) ->
   robot.hear /スレ/i, (msg) -> if (lot 50) then msg.send random_word ["2ちゃんねるを見ると、心が折れるので(笑)"]
   
   robot.hear /(お願い|頼み|出来.+？|でき.+？)/i, (msg) ->
-    if (lot 70) 
+    if (lot 50) 
       msg.send random_word ["ムリです。死んでしまいます（笑）",
                             "何とかなるよう、もがいています（笑）",
                             "現時点でそれができていないことに、申し訳なさを感じます。",
@@ -64,11 +64,11 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /(考えておきます|考えときます)/i, (msg) ->
-    if (lot 70) 
+    if (lot 50) 
       msg.send random_word ["僕は投げられたボールは全力で打ち返す主義なので、こちらも何か考えたいですね。負けられないです(笑)", "はい。"]
 
   robot.hear /ルーレット/i, (msg) ->
-    if (lot 70) 
+    if (lot 50) 
       msg.send random_word ["極まった遊びかたをされる方はコンテンツルーレットを毎日1回はやるのかなと。",
                             "効率派の方は、ガシガシとハイレベルを回してください（笑）",
                             "コンテンツルーレットの経験値がおいしいので、これを1日1回やり、残りはほかのいろいろなもので稼ぐ、というのがいちばん気軽なのかなと思います。",
@@ -76,7 +76,7 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /デイリー/i, (msg) ->
-    if (lot 70) 
+    if (lot 50) 
       msg.send random_word ["デイリーはべつに毎日リセットされますし、1週1回の場合も月曜日以外は、それほど焦る必要はないでしょう。",
                             "理想は「気がついたら貯まっていた」です。",
                             "別にいいんじゃないですか？",
@@ -84,7 +84,7 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /(どういうこと|どゆこと|どうゆうこと|なんで|なぜ|わからん|わからない)/i, (msg) ->
-    if (lot 70)
+    if (lot 50)
       msg.send random_word ["(爆笑)",
                             "うーん、やっぱりこれも「いいんじゃないですか？」になってしまいますね。",
                             "その疑問に対しても「別にいいんじゃないですか？」になりますね。",
@@ -100,7 +100,7 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /(難し|むず|やばすぎ)/i, (msg) ->
-    if (lot 70)
+    if (lot 50)
       msg.send random_word ["(爆笑)",
                             "避けて下さい(笑)",
                             "本当にそうでしょうか？",
@@ -112,21 +112,21 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /(おもしろ|面白)/i, (msg) ->
-    if (lot 70)
+    if (lot 50)
       msg.send random_word ["あはは、それは確かに面白そうです(笑)",
                             "そうですね。",
                             "はい。"
                            ]
 
   robot.hear /(ｗｗ|草)/i, (msg) ->
-    if (lot 70)
+    if (lot 50)
       msg.send random_word ["(爆笑)",
                             "あはは(笑)",
                             "はい。"
                            ]
 
   robot.hear /(思う|思ってる|思います)/i, (msg) ->
-    if (lot 70)
+    if (lot 50)
       msg.send random_word ["本当にそうでしょうか？",
                             "そんなふうには考えていないです。",
                             "うーん、そう思われてしまっても、お返しする言葉はなく、ご迷惑をおかけしたのは事実なので、平謝りするしかないです。",
@@ -141,7 +141,7 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /(ですか？|です？|じゃないの？|ですかね|でしょうか)/i, (msg) ->
-    if (lot 70)
+    if (lot 50)
       msg.send random_word ["本当にそうでしょうか？",
                             "そんなふうには考えていないです。",
                             "基本的にその質問に対しては「はい」とお答えします。",
@@ -159,7 +159,7 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /(暇|やることない|やることがない)/i, (msg) ->
-    if (lot 80)
+    if (lot 50)
       msg.send random_word ["本当にそうでしょうか？",
                             "コンテンツを用意できなかった我々が悪い。",
                             "うーん、そう思われてしまっても、お返しする言葉はなく、ご迷惑をおかけしたのは事実なので、平謝りするしかないです。",
@@ -171,7 +171,7 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /(決め.+？|決ま.+？)/i, (msg) ->
-    if (lot 80)
+    if (lot 50)
       msg.send random_word ["まだ決めていません（笑）",
                             "時間がなくて申し訳なかったです（笑）",
                             "別にいいんじゃないですか？",
@@ -180,7 +180,7 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /(何時|時間.*？|今週の予定)/i, (msg) ->
-    if (lot 80)
+    if (lot 50)
       msg.send random_word ["まだ決めていません（笑）",
                             "自分でもよくわかりません。",
                             "そこはご想像にお任せします（笑）",
@@ -191,7 +191,7 @@ module.exports = (robot) ->
                            ]
 
   robot.hear /(遅れそう|遅れます)/i, (msg) ->
-    if (lot 80)
+    if (lot 50)
       msg.send random_word ["まるで成長してないですね(苦笑)",
                             "(爆笑)",
                             "はい。",
