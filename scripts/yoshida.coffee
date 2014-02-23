@@ -18,7 +18,7 @@ lot = (percent) -> Math.floor((Math.random 0) * 100) >= (100 - percent)
 module.exports = (robot) ->
   robot.hear /(吉田？|よしだ？|よしだあ|よしだぁ)/i, (msg) ->
     if (lot 100)
-      msg.send(["(爆笑)",
+      word = ["(爆笑)",
                 "そんなふうには考えていないです。",
                 "その疑問に対しても「別にいいんじゃないですか?」になりますね。",
                 "あはは",
@@ -57,7 +57,8 @@ module.exports = (robot) ->
                 "ちょっとうちのBG制作やっているスタッフが拗ねてて(笑)。",
                 "みんなで「ウハー」という感じで。",
                 "僕の能力の限界なのかもしれないです"
-              ].sample)
+              ].sample
+      msg.send word
   robot.hear /吉魔/i, (msg) ->
     if (lot 70)
       msg.send ["お願いだから吉魔と呼ぶのは……というのは冗談で（笑）",
