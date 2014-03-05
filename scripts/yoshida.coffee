@@ -169,7 +169,7 @@ module.exports = (robot) ->
                 "はい"
                ]
 
-  robot.hear /(ｗｗ|草)/i, (msg) ->
+  robot.hear /(ｗｗｗ*|草)/i, (msg) ->
     if (lot 50)
       msg.send sample ["(爆笑)",
                 "あはは(笑)",
