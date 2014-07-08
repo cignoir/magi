@@ -1,6 +1,7 @@
 {
-  "dependencies" : {
+  "dependencies": {
     "hubot": "git://github.com/github/hubot.git",
-    "hubot-skype": "git://github.com/netpro2k/hubot-skype.git"
+    "hubot-skype": "git://github.com/netpro2k/hubot-skype.git",
+    "hubot-slack": "~2.1.0"
   }
 }
